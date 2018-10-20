@@ -14,7 +14,7 @@
       let valid_formats = [ 'years', 'months', 'weeks', 'days', 'hours', 'minutes', 'seconds' ]
 
       let params = (new URL(document.location)).searchParams;
-      let date = params.get('date') || moment().format('Y-MM-DD')
+      let date = params.get('date') || moment('2015-11-05').format('Y-MM-DD')
       let format = params.get('format')
 
       if (!valid_formats.includes(format)) format = 'days'
