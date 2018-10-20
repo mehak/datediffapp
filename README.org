@@ -1,0 +1,18 @@
+* Simple date difference app
+  This app is super simple.  It shows the time difference between today and
+  date.  It utilizes momentjs[momentjs.com] for this task.
+
+* How to use
+  Simply call the webpage this is hosted on with the date and optionally
+  the format parameters supplied.
+
+  Example:
+  #+BEGIN_SRC js
+    dd.b1n.win/?date=2015-11-05&format=seconds
+  #+END_SRC
+
+* Valid paramters
+  - date :: Can be any date format that moment
+            accepts[https://momentjs.com/docs/#/parsing/]
+  - format :: Can be one of the following: years, months, weeks, days,
+              hours, minutes, and seconds
